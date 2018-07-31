@@ -1,104 +1,40 @@
-# Work at Olist Frontend
+# Give Angular a chance
 
-[Olist](https://olist.com/) is a company that offers an integration platform
-for sellers and marketplaces allowing them to sell their products across
-multiple channels.
+Work at Olist Frontend, let be me =), let be Angular too =).
 
-The Olist [development team](https://engineering.olist.com/) consists of
-developers who love what they do. Our agile development processes and our
-search for the best development practices provide a great environment for
-professionals who like to create quality software in good company.
+# WHY ANGULAR?
 
-We are always looking for good programmers who love to improve their work. We
-give preference to small teams with qualified professionals over large teams
-with average professionals.
+Actualy is one of the most powerfull mechanism to work beacause has a great community, is oriented by component and one of the Angular premissis is the component reuse to prevent rework, Angular made easy the relationship and the contex share beetween components, Angular use Typescript that can made your application code be typed and this is great, because help the developer life, right? Besides that, Typescript is a language that use ECMA like javascript, however, typescript is nearer of the last ECMA version.  Give a try.
 
-This repository contains a problem used to evaluate the candidate skills.
-It's important to notice that solving the problem is just a
-part of what will be evaluated. We also consider other programming disciplines
-like documentation, testing, commit timeline, design and coding best
-practices.
+# Mind Trap
 
-Hints:
+For the concepts descripbed in the specification I prevented my mind to make things more than the specification =). I thinked in a poc application with login and a home after the login using something like JWT for the authentication, Angular routes and another little things that isn't specified for this test, then mind free, mind free.
 
-* Carefully read the specification to understand all the problem and
-  artifact requirements before starting.
-* Check the recommendations and reference material at the end of this
-  specification.
-
-
-## How to participate
-
-* Make a fork of this repository on Github. If you aren't comfortable with
-   creating a public fork of this project, make a private repository
-   (gitlab offers free private repos) and add developer permission for the
-   user [@tech-hiring](https://gitlab.com/tech-hiring) on project;
-* Follow the instructions on README.md (this file);
-* Deploy your project on a host service (we recommend
-   [Heroku](https://heroku.com) or [Netlify](http://netlify.com/));
-* Apply for the position at our [career page](https://www.99jobs.com/olist)
-   with:
-   * Link to the fork on Github (or gitlab.com);
-   * Link to the project in the deployed host service.
-
-
-## Specification
-
-Today, security is everything, but users still have the bad habit of creating
-accounts with weak passwords, and it is essential that we can offer the user
-ways to keep them safe. So, we must do our best to ensure the safety of our
-users.
-
-For this, you should implement a **new account** page, composed of Name, Email
-and Password with a strength measure indicator and Password confirmation. All
-these fields are required.
-
-
-## Style Guide
-
-The design of the page can be found in the link below:
-
-[Front-End Test Style Guide](https://www.figma.com/file/rsSlx8jDHls6nWXziElWTk/olist----front-end-test)
-
-* It's very important that you build this page exactly as proposed, pixel by
-pixel.
-
-
-## Instructions
-
-* The submit button must be disabled until the form is valid.
-* The Name is required and Email must be a valid email.
-* The invalid input fields should have a border color like the style guide.
-* The valid input fields should have a border color like the style guide.
-* The Password input must make use of the sequence of validation presented in
-  the Style Guide
-* If the form is valid, the submit button should be clickable
-* When the form is submitted, it should present a loading status.
-
-
-## Project Requirements:
-
-* Application must be written in HTML, JavaScript and CSS. You can only make
-  use of a CSS preprocessor.
-* You cannot use any Javascript library or framework with the exception of
-  polyfills.
-* Your page must support all modern browsers and IE 11+.
-* Write the project documentation containing: [Sample](https://github.com/elsewhencode/project-guidelines/blob/master/README.sample.md)
-  * Installing and testing instructions;
-  * Brief description of the work environment used to run this
-    project (Computer/operating system, text editor/IDE, libraries, etc).
-* Every text or code must be in English.
-
-
-## Recommendations
-
-* Write tests!
 * Use [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), [KISS](https://en.wikipedia.org/wiki/KISS_principle), [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-* Use programming good practices;
-* Use [git best practices](https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/best-practices),
-  with clear messages (written in English);
-* If you build this with Web Components it will be a plus.
-* Feel free to use any language to serve the page if you need. Using Python,
-  Go or Elixir is a plus.
 
-**Have fun!**
+#Was generated by
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build and Application Container
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. Ng build will create the index.html and the .js files from the Angular(typescript, html, scss, ...)
+
+The engine/server.js, will serve the files that was builded in dist.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
