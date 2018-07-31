@@ -1,0 +1,24 @@
+/*
+*   Palette
+*/
+$ui-default-color: rgb(180, 183, 207);
+$ui-invalid-color: rgb(247, 149, 130);
+$ui-warning-color: rgb(247, 188, 28);
+$ui-success-color: rgb(23, 212, 153);
+
+$ui-text-color: rgb(105, 109, 140);
+// $ui-text-color: #312F4F;
+/*
+*  Password Strenght palette
+*/
+$ui-password-strength-default: $ui-default-color;
+$ui-password-strength-weak: $ui-invalid-color;
+$ui-password-strength-medium: $ui-warning-color;
+$ui-password-strength-strong: $ui-success-color;
+
+/*
+*  Password Validation palette
+*/
+$ui-password-validation-default: $ui-default-color;
+$ui-password-validation-invalid: $ui-invalid-color;
+$ui-password-validation-valid: $ui-success-color;

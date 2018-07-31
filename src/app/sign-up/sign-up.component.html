@@ -1,0 +1,92 @@
+<div class = "ui-container">
+  <div class = "ui-sign-up" [ngClass] = "{'ui-sign-up-complete': registered}">
+    <div class = "ui-sign-up-header">
+      <div class = "ui-sign-up-logotype">
+        <img src = "../../assets/shared/img/logotype.svg">
+      </div>
+      <div class = "ui-sign-up-label" *ngIf = "!registered">
+        Crie sua conta
+      </div>
+    </div>
+    <div class = "ui-sign-up-form" *ngIf = "!registered">
+      <form [formGroup]="registerForm" (ngSubmit)="criarConta()">
+        <div class="ui-form-field">
+          <div class = "ui-form-field-label">
+            <label>Nome completo</label>
+          </div>
+          <div class = "ui-form-field-value">
+            <input type="text" (focus) = "eventBlur('name')" formControlName="name" class="form-control ui-input" 
+             required/>
+          </div>
+        </div>
+        <div class="ui-form-field">
+          <div class = "ui-form-field-label">
+            <label>E-mail</label>
+          </div>
+          <div class = "ui-form-field-value">
+            <input type="text" (focus) = "eventBlur('email')" formControlName="email" class="form-control ui-input" 
+             required/>
+          </div>
+        </div>
+        <div class="ui-form-field">
+          <div class = "ui-form-field-label">
+            <label>Senha</label>
+          </div>
+          <div class = "ui-form-field-value">
+            <input type="password" (keyup) = "eventPasswordChange('password')" (focus) = "eventPasswordChange('password')" formControlName="password" class="form-control ui-input" 
+            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" required/>
+          </div>
+          <div class = "ui-password">
+            <div class = "ui-password-strength">
+              <div #valid = "" class = "ui-password-bar" 
+              [ngClass] = "{
+                'ui-status-warning': requirementsInvalid === 1 && i <= requirementsInvalid,
+                'ui-status-invalid': requirementsInvalid > 1 && i < 1 && registerForm.get('password').value !== '',
+                'ui-status-valid': requirementsInvalid === 0
+              }"
+              *ngFor = "let requirement of requirements; let i = index"></div>
+            </div>
+            <div class = "ui-password-requirements">
+              <div class = "ui-password-requirement" *ngFor = "let requirement of requirements">
+                <div class = "ui-password-requirement-status" 
+                [ngClass] = "{
+                  'ui-status-default': requirement.valid === undefined,
+                  'ui-status-invalid': requirement.valid === false,
+                  'ui-status-valid': requirement.valid
+                }"></div>
+                <div class = "ui-password-requirement-description">
+                  {{requirement.description}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-form-field">
+            <div class = "ui-form-field-label">
+              <label>Confirmação sua senha</label>
+            </div>
+            <div class = "ui-form-field-value">
+              <input type="password" (focus) = "eventBlur('confirmationPassword')" formControlName="confirmationPassword" class="form-control ui-input" 
+              [ngClass]="{ 'is-invalid': submitted && f.confirmationPassword.errors }" required />
+            </div>
+          </div>
+        <div class = "ui-form-action">
+          <button class="ui-form-button">Criar conta</button>
+        </div>
+      </form>
+    </div>
+    <div class = "ui-sign-up-done" *ngIf = "registered">
+      <div class = "ui-sign-up-done-header">
+        <div class = "ui-sign-up-done-icon">
+          <img src = "../../assets/shared/img/check.svg">
+        </div>
+        <div class = "ui-sign-up-done-label">
+          Tudo certo
+        </div>
+      </div>
+      <div class = "ui-sign-up-done-body">
+        Verifique sua caixa de entrada<br>para confirmar o seu e-mail.
+      </div>
+    </div>
+  </div>
+</div>
