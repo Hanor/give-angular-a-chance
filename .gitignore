@@ -1,9 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/tmp
-/out-tsc
+interface/dist
+interface/tmp
+interface/out-tsc
 
 # dependencies
 /node_modules
@@ -25,15 +25,15 @@
 !.vscode/extensions.json
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+interface/.sass-cache
+interface/connect.lock
+interface/coverage
+interface/libpeerconnection.log
+interface/npm-debug.log
+interface/yarn-error.log
+interface/testem.log
+interface/typings
 
 # System Files
-.DS_Store
-Thumbs.db
+interface/.DS_Store
+interface/Thumbs.db
