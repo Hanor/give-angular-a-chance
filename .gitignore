@@ -37,3 +37,7 @@ interface/typings
 # System Files
 interface/.DS_Store
 interface/Thumbs.db
+
+# Firebase
+.firebaserc
+firebase.json

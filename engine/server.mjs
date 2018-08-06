@@ -7,7 +7,7 @@ export class Server {
     constructor() {
         this.port = ( process.env.PORT || 8080 );
         this.app = express();
-        this.app.listen( this.port )
+        this.app.listen( this.port, '0.0.0.0' )
         this.app.use('', express.static( '../interface/dist' ));
         this.app.use('*', express.static( '../interface/dist' ));
         this.app.use(morgan('dev'));
