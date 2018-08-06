@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm install -g @angular/cli && npm install && cd interface && ng build --prod && cd ../engine && node --experimental-modules server.mjs",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,7 +23,12 @@
     "core-js": "^2.5.4",
     "npm": "^6.2.0",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "morgan": "^1.9.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "file-system": "^2.2.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.8",
